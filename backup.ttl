@@ -1,0 +1,37 @@
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix vann: <http://purl.org/vocab/vann/>.
+@prefix huhu: <https://w3id.org/>.
+
+huhu:
+    a skos:ConceptScheme;
+    dct:description "My wonderful vocabulary."@en;
+    dct:title "Beverages 🍻"@en;
+    vann:preferredNamespaceUri huhu:;
+    skos:hasTopConcept huhu:57282, huhu:c2fc9, huhu:dee37 .
+huhu:57282
+    a skos:Concept;
+    skos:narrower huhu:8d7d7, huhu:cc676;
+    skos:prefLabel "Wine"@en;
+    skos:topConceptOf huhu: .
+huhu:6fd05
+    a skos:Concept;
+    skos:broader huhu:c2fc9;
+    skos:inScheme huhu:;
+    skos:prefLabel "Raw Milk"@en.
+huhu:8d7d7
+    a skos:Concept;
+    skos:broader huhu:57282;
+    skos:inScheme huhu:;
+    skos:prefLabel "White Wine"@en.
+huhu:c2fc9
+    a skos:Concept;
+    skos:narrower huhu:6fd05;
+    skos:prefLabel "Milk"@en;
+    skos:topConceptOf huhu: .
+huhu:cc676
+    a skos:Concept;
+    skos:broader huhu:57282;
+    skos:inScheme huhu:;
+    skos:prefLabel "Red Wine"@en.
+huhu:dee37 a skos:Concept; skos:prefLabel "Beer"@en; skos:topConceptOf huhu: .
