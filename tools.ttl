@@ -5,8 +5,8 @@
 
 tttools:
     a skos:ConceptScheme;
-    dct:description "Test vocabulary for SWIB24"@en;
-    dct:title "Tools"@en;
+    dct:description "Test vocabulary for SWIB24"@en, "Test de vocabulaire pour SWIB24"@fr;
+    dct:title "Tools"@en, "Outils"@fr;
     vann:preferredNamespaceUri tttools:;
     skos:hasTopConcept tttools:3c3ab, tttools:690f3, tttools:88871 .
 tttools:12da6
